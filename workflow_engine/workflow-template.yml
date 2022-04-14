@@ -1,0 +1,44 @@
+---
+connectors:
+- connector_name: slack
+  fields:
+    channelidentifier: {{SLACK_CHANNEL_ID}}
+    bearertoken: {{SLACK_TOKEN}}
+---
+buildbreaker:
+- activityname: sast
+  status:
+  - new
+  - open
+  overallseverity:
+  - high
+  categories:
+  - name: Stored Cross-site Scripting(XSS)
+    severity: medium
+  - name: sql-injection
+    severity: low
+- activityname: dast
+  status:
+  - new
+  - triaged
+  overallseverity:
+  - high
+  categories:
+  - name: Sql-Injection
+    severity: medium
+- activityname: sca
+  status:
+  - new
+  overallseverity:
+  - high
+  categories:
+  - name: cve-2015-2119
+    severity: medium
+---
+tool_information:
+- tool_name: polaris
+  enabled: true
+  fields:
+    project_name: insecure-bank
+    instance_url: {{POLARIS_URL}}
+    auth_token: {{POLARIS_TOKEN}}

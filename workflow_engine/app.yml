@@ -1,0 +1,28 @@
+application:
+  appId: insecure-bank
+  assetId: insecure-bank
+  sdlcType: EDM
+  appType: Webapp
+  webservice: false
+  restApi: false
+  microservice: false
+  projectLanguage: Java
+  frameworks: 
+   - Spring security
+   - Hibernate
+  platformVersion: Java
+  buildSystem: Maven
+  riskMatrixRevision: Rev1.0
+  sourceFilePattern: ".*\\+\\+\\+.*(\\.go|\\.html)+.*"
+  sensitivePackagePattern: ".*(\\+\\+\\+.*(engine)).*"
+  fileChangeThreshold: 10
+
+environment:
+  scm: Github
+  scmOwner: Poc
+  scmRepositoryName: insecure-bank
+  scmBranchName: master
+  testDeploymentRoot: "insecure-bank"
+  imChannelIdentifier: "#a"
+  jiraProjectName: "D1"
+  jiraIssuesQuery: "resolution = \"Unresolved\" AND labels in (Security, Defect)"
