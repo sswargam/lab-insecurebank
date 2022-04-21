@@ -21,18 +21,11 @@
 			    <artifactId>spotbugs-maven-plugin</artifactId>
 			    <version>4.6.0.0</version>
 			    <configuration>
-				<effort>Max</effort>
-				<threshold>Low</threshold>
-				<failOnError>true</failOnError>
-				<includeFilterFile>${session.executionRootDirectory}/spotbugs-security-include.xml</includeFilterFile>
-				<excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>
-				<plugins>
-				    <plugin>
-					<groupId>com.h3xstream.findsecbugs</groupId>
-					<artifactId>findsecbugs-plugin</artifactId>
-					<version>LATEST</version> <!-- Auto-update to the latest stable -->
-				    </plugin>
-				</plugins>
+					<effort>Max</effort>
+					<threshold>Low</threshold>
+					<failOnError>true</failOnError>
+					<includeFilterFile>${session.executionRootDirectory}/spotbugs-security-include.xml</includeFilterFile>
+					<excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>
 			    </configuration>
 			</plugin>
 			<plugin>
