@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.hdiv</groupId>
+	<groupId>com.synopsys</groupId>
 	<artifactId>insecure-bank</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
@@ -28,9 +28,9 @@
 					<excludeFilterFile>${session.executionRootDirectory}/spotbugs-security-exclude.xml</excludeFilterFile>
 					<plugins>
 						<plugin>
-						<groupId>com.h3xstream.findsecbugs</groupId>
-						<artifactId>findsecbugs-plugin</artifactId>
-						<version>LATEST</version> <!-- Auto-update to the latest stable -->
+							<groupId>com.h3xstream.findsecbugs</groupId>
+							<artifactId>findsecbugs-plugin</artifactId>
+							<version>LATEST</version> <!-- Auto-update to the latest stable -->
 						</plugin>
 					</plugins>
 			    </configuration>
