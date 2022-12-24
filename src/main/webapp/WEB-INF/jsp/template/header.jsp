@@ -4,7 +4,7 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en" class="no-js"> <![endif]-->
 <!--[if !(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-	<title>${requestScope['javax.servlet.forward.servlet_path']}</title>
+	<title>Insecure Bank ${requestScope['javax.servlet.forward.servlet_path']}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Insecure Bank">
