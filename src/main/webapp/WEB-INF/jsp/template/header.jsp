@@ -4,7 +4,7 @@
 <!--[if IE 9 ]><html class="ie ie9" lang="en" class="no-js"> <![endif]-->
 <!--[if !(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
 <head>
-	<title>Insecure Bank</title>
+	<title>${pageContext.request.servletPath}</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="description" content="Insecure Bank">
