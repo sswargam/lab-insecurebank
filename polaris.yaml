@@ -16,4 +16,4 @@ analyze:
 install:
   coverity:
     version: default
-serverUrl: ${{ secrets.POLARIS_URL }}
+serverUrl: ${{ ORG_POLARIS_SERVER_URL }}
