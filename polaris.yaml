@@ -15,5 +15,5 @@ analyze:
   mode: central
 install:
   coverity:
-    version: default
+    version: 2022.12.0
 serverUrl: ${{ secrets.ORG_POLARIS_SERVER_URL }}
