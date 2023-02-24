@@ -6,14 +6,12 @@ project:
     name: ${scm.git.commit}
     date: ${scm.git.commit.date}
 capture:
-  build:
-    cleanCommands:
-    - shell: [mvn, -B, clean]
-    buildCommands:
-    - shell: [mvn, -B, compile]
+  coverity:
+    idirCapture: 
+      idirPath: "idir"
 analyze:
   mode: central
 install:
   coverity:
-    version: default
+    version: "2022.12.0"
 serverUrl: https://sipse.polaris.synopsys.com
