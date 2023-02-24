@@ -15,5 +15,5 @@ analyze:
   mode: central
 install:
   coverity:
-    version: 2022.12.0
-serverUrl: ${{ secrets.ORG_POLARIS_SERVER_URL }}
+    version: default
+serverUrl: https://sipse.polaris.synopsys.com
