@@ -11,29 +11,37 @@ capture:
       extensions: [ear]
       files:
       - directory: ${project.projectDir}
+      - excludeRegex: .*.jar
     java:
       files:
       - directory: ${project.projectDir}
+      - excludeRegex: .*.jar
     javascript:
       files:
       - directory: ${project.projectDir}
       - excludeRegex: node_modules|bower_components|vendor
+      - excludeRegex: .*.jar
     php:
       files:
       - directory: ${project.projectDir}
+      - excludeRegex: .*.jar
     python:
       files:
       - directory: ${project.projectDir}
+      - excludeRegex: .*.jar
     ruby:
       files:
       - directory: ${project.projectDir}
+      - excludeRegex: .*.jar
     typescript:
       files:
       - directory: ${project.projectDir}
+      - excludeRegex: .*.jar
     wars:
       extensions: [war]
       files:
       - directory: ${project.projectDir}
+      - excludeRegex: .*.jar
 analyze:
   mode: central
 install:
