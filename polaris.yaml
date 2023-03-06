@@ -37,11 +37,6 @@ capture:
       files:
       - directory: ${project.projectDir}
       - excludeRegex: .*.jar
-    wars:
-      extensions: [war]
-      files:
-      - directory: ${project.projectDir}
-      - excludeRegex: .*.jar
 analyze:
   mode: central
 install:
