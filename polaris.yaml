@@ -13,9 +13,6 @@ capture:
       - excludeRegex: .*.war|.*.jar
 analyze:
   mode: central
-  coverity:
-    caching:
-      jars: "disable"
 install:
   coverity:
     version: "2022.12.0"
