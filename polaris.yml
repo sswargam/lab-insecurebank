@@ -6,17 +6,14 @@ project:
     name: ${scm.git.commit}
     date: ${scm.git.commit.date}
 capture:
-  fileSystem:
-    java:
-      files:
-      - directory: ${project.projectDir}
-      - excludeRegex: .*.war|.*.jar
+  build:
+    cleanCommands:
+    - shell: [mvn, -B, clean]
+    buildCommands:
+    - shell: [mvn, -B, compile]
 analyze:
   mode: central
-  coverity:
-    caching:
-      jars: "disable"
 install:
   coverity:
-    version: "2022.12.0"
-serverUrl: https://sipse.polaris.synopsys.com
+    version: default
+serverUrl: https://sig-cons-ms-sca.polaris.synopsys.com
