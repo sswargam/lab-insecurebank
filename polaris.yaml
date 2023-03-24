@@ -16,4 +16,4 @@ analyze:
 install:
   coverity:
     version: default
-serverUrl: https://sig-cons-ms-sca.polaris.synopsys.com
+serverUrl: ${{ secrets.POLARIS_URL }}
