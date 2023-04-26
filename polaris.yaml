@@ -1,0 +1,22 @@
+version: "1"
+project:
+  name: insecure-bank
+  branch: ${scm.git.branch}
+  revision:
+    name: ${scm.git.commit}
+    date: ${scm.git.commit.date}
+capture:
+  fileSystem:
+    java:
+      files:
+      - directory: ${project.projectDir}
+      - excludeRegex: .*.war|.*.jar
+analyze:
+  mode: central
+  coverity:
+    caching:
+      jars: "disable"
+install:
+  coverity:
+    version: "2022.12.0"  
+serverUrl: ${{ secrets.POLARIS_URL }}
