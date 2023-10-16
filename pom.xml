@@ -37,10 +37,10 @@
 			</plugin>
 			<!-- SpotBugs Static Analysis -->
 			<plugin>
-			    <groupId>com.github.spotbugs</groupId>
-			    <artifactId>spotbugs-maven-plugin</artifactId>
-			    <version>4.7.3.6</version>
-			    <configuration>
+				<groupId>com.github.spotbugs</groupId>
+				<artifactId>spotbugs-maven-plugin</artifactId>
+				<version>4.7.3.6</version>
+				<configuration>
 					<effort>Max</effort>
 					<threshold>Low</threshold>
 					<failOnError>true</failOnError>
@@ -53,15 +53,14 @@
 							<version>LATEST</version> <!-- Auto-update to the latest stable -->
 						</plugin>
 					</plugins>
-			    </configuration>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.11.0</version>
 				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
+					<release>11</release>
 				</configuration>
 			</plugin>
 			<plugin>
