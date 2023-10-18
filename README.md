@@ -4,7 +4,7 @@
 
 1. Clone the repository:
 
-        $ git clone https://github.com/devsecops-test/lab-insecurbank.git
+        $ git clone https://github.com/devsecops-test/lab-insecurebank.git
 2. Run the application using an embedded Tomcat:
 
 	    $ mvn clean package
